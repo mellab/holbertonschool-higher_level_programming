@@ -48,4 +48,4 @@ flycheck_*.el
 /network-security.data
 
 # main
-main.py
+*-main.py
