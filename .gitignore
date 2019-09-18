@@ -49,3 +49,6 @@ flycheck_*.el
 
 # main
 *-main.py
+
+#pycache
+__pycache__
