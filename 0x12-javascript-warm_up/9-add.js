@@ -1,16 +1,14 @@
 #!/usr/bin/node
 
-const arg = process.argv[2];
+const arg1 = Number(process.argv[2]);
+const arg2 = Number(process.argv[3]);
 
-if (isNaN(Number(arg))) {
-  console.log('Missing size');
+if (isNaN(arg1) || isNaN(arg2)) {
+  console.log('NaN');
 } else {
-  const num = Number(arg);
-  for (let i = 0; i < num; i++) {
-    let row = '';
-    for (let j = 0; j < num; j++) {
-      row += 'X';
-    }
-    console.log(row);
-  }
+  console.log(add(arg1, arg2));
+}
+
+function add (a, b) {
+  return a + b;
 }
